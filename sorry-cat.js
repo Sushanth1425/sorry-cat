@@ -25,7 +25,7 @@ const playCryAudio=()=>{
   document.querySelector(".crying_cat").play()
 }
 const pauseCryAudio=()=>{
-  document.querySelector("crying_cat").pause()
+  document.querySelector(".crying_cat").pause()
 }
 noButton.addEventListener('mouseover',()=>{
   changeBGI()
@@ -38,7 +38,7 @@ noButton.addEventListener('click',()=>{
   buttonFly()
 })
 const pauseHappyAudio=()=>{
-  document.querySelector("happy_cat").pause()
+  document.querySelector(".happy_cat").pause()
 }
 
 const yesButton= document.querySelector('.yesButton')
