@@ -40,4 +40,10 @@ const yesButton= document.querySelector('.yesButton')
 function yesChangeBGI(){
   document.querySelector(".bgi").src= "https://media.tenor.com/906nGAL7Xw0AAAAi/mochi-peachcat-cute-cat.gif"
 }
-yesButton.addEventListener('click',yesChangeBGI)
+const playHappyAudio=()=>{
+  document.querySelector(".yesButton").play()
+}
+yesButton.addEventListener('click',()=>{
+  yesChangeBGI()
+  playHappyAudio()
+})
