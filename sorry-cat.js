@@ -41,7 +41,7 @@ function yesChangeBGI(){
   document.querySelector(".bgi").src= "https://media.tenor.com/906nGAL7Xw0AAAAi/mochi-peachcat-cute-cat.gif"
 }
 const playHappyAudio=()=>{
-  document.querySelector(".yesButton").play()
+  document.querySelector(".happy_cat").play()
 }
 yesButton.addEventListener('click',()=>{
   yesChangeBGI()
