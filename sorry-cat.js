@@ -24,17 +24,22 @@ const buttonFly=()=>{
 const playCryAudio=()=>{
   document.querySelector(".crying_cat").play()
 }
+const pauseCryAudio=()=>{
+  document.querySelector("crying_cat").pause()
+}
 noButton.addEventListener('mouseover',()=>{
   changeBGI()
   buttonFly()
   playCryAudio()
+  pauseHappyAudio()
 })
 noButton.addEventListener('click',()=>{
   changeBGI()
   buttonFly()
 })
-
-
+const pauseHappyAudio=()=>{
+  document.querySelector("happy_cat").pause()
+}
 
 const yesButton= document.querySelector('.yesButton')
 function yesChangeBGI(){
@@ -46,4 +51,5 @@ const playHappyAudio=()=>{
 yesButton.addEventListener('click',()=>{
   yesChangeBGI()
   playHappyAudio()
+  pauseCryAudio()
 })
